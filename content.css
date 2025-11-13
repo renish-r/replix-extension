@@ -1,0 +1,98 @@
+/* Tone Selector Dropdown */
+.tone-selector {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(60, 64, 67, 0.3);
+  margin-top: 4px;
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.tone-option {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #202124;
+}
+
+.tone-option:hover {
+  background-color: #f1f3f4;
+}
+
+/* "May I" & "Edit" Buttons */
+.ai-reply-button,
+.edit-button {
+  background-color: #1a73e8 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 18px !important;
+  height: 36px !important;
+  padding: 0 20px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.ai-reply-button:hover,
+.edit-button:hover {
+  background-color: #1669c1 !important;
+}
+
+/* Edit container wrapping both textarea and Apply button */
+#editContainer {
+  position: relative;
+  width: 100%;
+  display: none;
+  margin-top: 6px;
+}
+
+/* Compact Edit Box */
+#editBox {
+  width: 100%;
+  min-height: 70px;
+  max-height: 130px;
+  resize: vertical;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  padding: 8px 44px 8px 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  z-index: 9999;
+  display: none;
+  box-sizing: border-box;
+}
+
+/* Apply Button inside bottom-right corner */
+#applyButton {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  display: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#applyButton:hover {
+  background-color: #1669c1;
+}
